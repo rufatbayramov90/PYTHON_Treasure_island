@@ -20,6 +20,18 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /
 *******************************************************************************
 ''')
+closeBox =('''
+
+       --           --
+         \  _---_  /
+          \/     \/
+           |() ()|  Game
+            \ + /   Over
+           / HHH /
+          /  \_/  /
+        --          --
+    `""""-""""""""""""""""""""""""""-""""`
+''')
 
 
 print("Welcome to Treasure Island")
@@ -31,17 +43,17 @@ if choose == "left":
     if choose_one == "wait":
         choose_two = input('What color do you choose? yellow , red or blue').lower()
         if choose_two == "red":
-            print("It's a room full of fire.GAME OVER")
+            print(f"It's a room full of fire.GAME OVER {closeBox}")
         elif choose_two ==" yellow":
-            print("You chose a door that doesn't exist. Game Over")
+            print(f"You chose a door that doesn't exist. Game Over  {closeBox}")
         elif choose_two == "blue":
             print(f"You Win!!! {box}")
         else:
-            print("You chose a door that doesn't exist. GAME OVER")
+            print(f"You chose a door that doesn't exist. GAME OVER   {closeBox}")
     else:
-       print("You should have waited. GAME OVER") 
+       print(f"You should have waited. GAME OVER {closeBox}") 
 else:
-    print("You did not choose the correct option.GAME OVER")
+    print(f"You did not choose the correct option.GAME OVER   {closeBox}")
     
 
  
