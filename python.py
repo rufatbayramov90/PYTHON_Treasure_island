@@ -26,7 +26,19 @@ print("Your mission is to find the treasure")
 
 choose = input("Where do you want to go? Left or Right").lower()
 if choose == "left":
-    print("Continue")
+    choose_one = input('You have come to a lake."wait" to wait for a boaT."swim" to swim aceoss').lower()
+    if choose_one == "wait":
+        choose_two = input('What color do you choose? yellow , red or blue').lower()
+        if choose_two == "red":
+            print("It's a room full of fire.GAME OVER")
+        elif choose_two ==" yellow":
+            print("You chose a door that doesn't exist. Game Over")
+        elif choose_two == "blue":
+            print("You Win!!! ")
+        else:
+            print("You chose a door that doesn't exist. GAME OVER")
+    else:
+       print("You should have waited. GAME OVER") 
 else:
     print("You did not choose the correct option.GAME OVER")
     
