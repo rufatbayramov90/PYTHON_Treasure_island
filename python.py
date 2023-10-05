@@ -21,6 +21,7 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 
+
 print("Welcome to Treasure Island")
 print("Your mission is to find the treasure") 
 
@@ -34,7 +35,7 @@ if choose == "left":
         elif choose_two ==" yellow":
             print("You chose a door that doesn't exist. Game Over")
         elif choose_two == "blue":
-            print("You Win!!! ")
+            print(f"You Win!!! {box}")
         else:
             print("You chose a door that doesn't exist. GAME OVER")
     else:
